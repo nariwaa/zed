@@ -9,7 +9,12 @@
   {
     "context": "Workspace",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
+      "space f f": "file_finder::Toggle",
+      "space b": "workspace::NewFile",
+      "space x": "workspace::CloseWindow",
+      "ctrl-n": "workspace::ToggleRightDock",
+      "space /": "vim::ToggleComments"
+      // "tab": "next"
     }
   },
   {
