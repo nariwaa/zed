@@ -7,14 +7,21 @@
 // from the command palette.
 [
   {
-    "context": "Workspace",
+    "context": "vim_mode == normal && !menu",
     "bindings": {
       "space f f": "file_finder::Toggle",
       "space b": "workspace::NewFile",
       "space x": "workspace::CloseWindow",
-      "ctrl-n": "workspace::ToggleRightDock",
       "space /": "vim::ToggleComments"
-      // "tab": "next"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-n": "workspace::ToggleRightDock",
+      "tab": "workspace::ActivateNextPane", // this doesn't work for some reason...
+      "shift-tab": "workspace::ActivatePreviousPane",
+      "alt-h": "workspace::OpenTerminal" //also broken
     }
   },
   {
